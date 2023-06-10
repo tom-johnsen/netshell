@@ -1,0 +1,35 @@
+NETSHELL(1)             User Commands              NETSHELL(1)
+
+NAME
+       netshell - Simple network shell server accepting a single client connection
+
+SYNOPSIS
+       netshell <port>
+
+DESCRIPTION
+       The netshell program is a simple network shell server that accepts a single client connection on the specified port. Once a client is connected, it redirects the client's input/output to a command shell, allowing the client to interact with the server's command shell.
+
+       DISCLAIMER: This program is intended for controlled environments such as Capture The Flag (CTF) competitions and similar scenarios. Running this program in a real environment or on a public network can be extremely dangerous and should be avoided. Please use it responsibly and follow all applicable laws and regulations.
+
+OPTIONS
+       <port>
+              The port number on which the server listens for client connections. Must be an integer between 1 and 65535.
+
+EXAMPLES
+       Start the server on port 8080:
+
+              netshell 8080
+
+       Connect to the server using a Telnet client or any other compatible client application.
+
+SEE ALSO
+       netshell-multi(1)
+
+AUTHOR
+       Written by Tom Johnsen.
+
+COPYRIGHT
+       This program is free software; you can redistribute it and/or modify it under the terms of the MIT License.
+
+BUGS
+       Report any bugs or issues at https://github.com/Tom-Johnsen/netshell.
