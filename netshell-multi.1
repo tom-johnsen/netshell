@@ -1,0 +1,35 @@
+NETSHELL-MULTI(1)       User Commands       NETSHELL-MULTI(1)
+
+NAME
+       netshell-multi - Concurrent network shell server accepting multiple client connections
+
+SYNOPSIS
+       netshell-multi <port>
+
+DESCRIPTION
+       The netshell-multi program is a concurrent network shell server that accepts multiple client connections on the specified port. Once a client is connected, it creates a new thread to handle the client's input/output, allowing multiple clients to interact with the server concurrently.
+
+       DISCLAIMER: This program is intended for controlled environments such as Capture The Flag (CTF) competitions and similar scenarios. Running this program in a real environment or on a public network can be extremely dangerous and should be avoided. Please use it responsibly and follow all applicable laws and regulations.
+
+OPTIONS
+       <port>
+              The port number on which the server listens for client connections. Must be an integer between 1 and 65535.
+
+EXAMPLES
+       Start the server on port 8080:
+
+              netshell-multi 8080
+
+       Connect to the server using a Telnet client or any other compatible client application.
+
+SEE ALSO
+       netshell(1)
+
+AUTHOR
+       Written by Tom Johnsen.
+
+COPYRIGHT
+       This program is free software; you can redistribute it and/or modify it under the terms of the MIT License.
+
+BUGS
+       Report any bugs or issues at https://github.com/Tom-Johnsen/netshell.
