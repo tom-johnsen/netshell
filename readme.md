@@ -6,13 +6,13 @@ NetShell is a simple network shell server that creates a TCP shell over a specif
 
 ## Table of Contents
 
-- Features
-- Prerequisites
-- Installation
-- Usage
-- Examples
-- Contributing
-- License
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
 
